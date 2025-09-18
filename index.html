@@ -5,3 +5,57 @@
   <title>Silksong Completion Analyzer</title>
   <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<style>
+
+  body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .box  {
+    margin: 0px auto;
+    height: 21px;
+    width: 550px;
+    background-color: grey;
+    overflow-wrap: break-word;
+    text-align: center;
+    border-radius: 10px;
+    outline: 5px solid whitesmoke 
+  }
+  button {
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+</style>
+
+<body style="text-align:center;">
+  <h1>Save File Completion Analyzer</h1>
+  <h2 style="text-align:center;">For Hollow Knight: Silksong</h2>
+
+
+  <p style="text-align:center;">Your save file can be found at:</p>
+  <div class="box">
+    <p style="color: white; font-size: 15px;">
+      %USERPROFILE%\AppData\LocalLow\Team Cherry\Hollow Knight Silksong\
+    </p>
+  </div>
+
+
+  <div class="button"></div>
+  <button onclick="document.getElementById('fileUpload').click()">
+    Select Save File...
+  </button>
+  <input type="file" id="fileUpload" style="display: none;">
+
+  <p id="output"></p>
+ 
+  <py-script>
+    print("hello")
+  </py-script>
+
+
+</body>
+</html>
