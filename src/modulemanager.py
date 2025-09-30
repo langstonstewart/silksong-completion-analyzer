@@ -23,25 +23,10 @@ class ModuleManager:
             return True
 
         except ModuleNotFoundError:
-            banner()
-            print("Silksong Completion Analyzer requires the following dependencies to run functionally:")
-
-            for module in self.module_list:
-                print(f"- {module.title()}")
-            banner()
-
-            while True:
-                prompt = input("Would you like to install these modules now? (Y/N) > ")
-                banner()
-                if prompt.lower() in ["yes", "y"]:
-                    
                     for module in self.module_list:
                         self.installer(module)
 
                     return True
-                
-                elif prompt.lower() in ["no", "n"]:
-                    return False   
-
+        
     def installer(self, package):
         subprocess.check_call([sys.executable, "-m", "pip", "install", package])
