@@ -22,7 +22,7 @@ Use the simple, client-sided application to track the following game progress:
 - Memory Lockets
 - Lost Fleas
 - Tools
-- Bosses (Coming Soon)
+- Bosses
 
 All with location data from the [Hollow Knight: Silksong Interactive Map.](https://mapgenie.io/hollow-knight-silksong/maps/pharloom)
 
