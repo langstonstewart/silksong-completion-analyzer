@@ -44,7 +44,7 @@ class Application:
 
         self.window.setCentralWidget(self.scroll_area)
 
-        self.window.keyPressEvent = self.toggle_fullscreen
+        self.window.keyPressEvent = self.toggle_fullscreen # type: ignore
 
         self.mode = self.app_data['UserData']['theme']
         self.switch_scrollbar()
@@ -85,61 +85,67 @@ class Application:
 
     def display_basic_data(self):
 
-        self.manager.display_fleur("hornet")
+        if self.manager is not None:
 
-        self.manager.return_completion()
+            self.manager.display_fleur("hornet")
 
-        self.manager.return_playtime()
-        
-        self.manager.display_fleur()
+            self.manager.return_completion()
 
-        self.manager.return_health()
+            self.manager.return_playtime()
+            
+            self.manager.display_fleur()
 
-        self.manager.return_silk()
+            self.manager.return_health()
 
-        self.manager.return_rosaries()
+            self.manager.return_silk()
 
-        self.manager.return_shell_shards()
+            self.manager.return_rosaries()
 
-        self.manager.display_fleur()
+            self.manager.return_shell_shards()
 
-        self.display_advanced_data()
+            self.manager.display_fleur()
+
+            self.display_advanced_data()
 
 
 
     def display_advanced_data(self):
 
-        self.manager.return_silk_hearts()
+        if self.manager is not None:
 
-        self.manager.return_craftmetal()
+            self.manager.return_silk_hearts()
 
-        self.manager.return_mask_shards()
+            self.manager.return_craftmetal()
 
-        self.manager.return_spool_fragments()
+            self.manager.return_mask_shards()
 
-        self.manager.return_crafting_kit_upgrades()
+            self.manager.return_spool_fragments()
 
-        self.manager.return_tool_pouch_upgrades()
+            self.manager.return_crafting_kit_upgrades()
 
-        self.manager.return_nail_upgrades()
+            self.manager.return_tool_pouch_upgrades()
 
-        self.manager.return_silk_skills()
+            self.manager.return_nail_upgrades()
 
-        self.manager.return_abilities()
+            self.manager.return_silk_skills()
 
-        self.manager.return_crests()
+            self.manager.return_abilities()
 
-        self.manager.return_simple_keys()
+            self.manager.return_crests()
 
-        self.manager.return_cylinders()
+            self.manager.return_simple_keys()
 
-        self.manager.return_memory_lockets()
+            self.manager.return_cylinders()
 
-        self.manager.return_fleas()
+            self.manager.return_memory_lockets()
 
-        self.manager.return_tools()
+            self.manager.return_fleas()
 
-        self.manager.display_fleur()
+            self.manager.return_tools()
+
+            self.manager.return_bosses()
+
+            self.manager.display_fleur()
 
     def display_title(self):
 
@@ -188,14 +194,14 @@ class Application:
         def on_click(event):
             if event.button() == Qt.MouseButton.LeftButton:
                 clipboard = QApplication.clipboard()
-                clipboard.setText(helper_text)
+                clipboard.setText(helper_text) # type: ignore
                 h4.setText("Copied!")
             
         h4.enterEvent = on_enter
 
-        h4.leaveEvent = on_leave
+        h4.leaveEvent = on_leave # type: ignore
 
-        h4.mousePressEvent = on_click
+        h4.mousePressEvent = on_click # type: ignore
         
         h4.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.header_layout.addWidget(h4, alignment=Qt.AlignmentFlag.AlignHCenter)
@@ -351,16 +357,16 @@ class Application:
             QDesktopServices.openUrl(QUrl(url))
             
         git_label.enterEvent = partial(on_enter, git_label)
-        git_label.leaveEvent = partial(on_leave, git_label)
-        git_label.mousePressEvent = partial(on_click, "https://github.com/langstonstewart/silksong-completion-analyzer")
+        git_label.leaveEvent = partial(on_leave, git_label) # type: ignore
+        git_label.mousePressEvent = partial(on_click, "https://github.com/langstonstewart/silksong-completion-analyzer") # type: ignore
 
         ss_label.enterEvent = partial(on_enter, ss_label)
-        ss_label.leaveEvent = partial(on_leave, ss_label)
-        ss_label.mousePressEvent = partial(on_click, "https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong")
+        ss_label.leaveEvent = partial(on_leave, ss_label) # type: ignore
+        ss_label.mousePressEvent = partial(on_click, "https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong") # type: ignore
 
         steam_label.enterEvent = partial(on_enter, steam_label)
-        steam_label.leaveEvent = partial(on_leave, steam_label)
-        steam_label.mousePressEvent = partial(on_click, "https://www.teamcherry.com.au")
+        steam_label.leaveEvent = partial(on_leave, steam_label) # type: ignore
+        steam_label.mousePressEvent = partial(on_click, "https://www.teamcherry.com.au") # type: ignore
         
     def toggle_theme(self):
         if self.mode == 1:
@@ -395,7 +401,7 @@ class Application:
 
     def switch_scrollbar(self):
         if self.mode == 1:
-            self.scroll_area.verticalScrollBar().setStyleSheet("QScrollBar"
+            self.scroll_area.verticalScrollBar().setStyleSheet("QScrollBar" # type: ignore
                                 "{"
                                 "background : #1a1a1a;"
                                 "}"
@@ -411,7 +417,7 @@ class Application:
                                 
                                 )
         elif self.mode == 0:
-            self.scroll_area.verticalScrollBar().setStyleSheet("QScrollBar"
+            self.scroll_area.verticalScrollBar().setStyleSheet("QScrollBar" # type: ignore
                                 "{"
                                 "background : #8d8d8d;"
                                 "}"

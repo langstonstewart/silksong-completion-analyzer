@@ -61,11 +61,14 @@ class ImageManager:
 
         self.tool_icon = (QPixmap("src/images/icons/advanced_data/toolmaster.png"), QPixmap("src/images/icons/advanced_data/toolmaster.png"))
 
+        self.heart_icon = (QPixmap("src/images/icons/advanced_data/ant_heart.png"), QPixmap("src/images/icons/advanced_data/ant_heart.png"))
+
         self.steam_icon = (QPixmap("src/images/icons/links/steam_icon_dark.png"), QPixmap("src/images/icons/links/steam_icon_light.png"))
 
         self.github_icon = (QPixmap("src/images/icons/links/github_icon_dark.png"), QPixmap("src/images/icons/links/github_icon_light.png"))
 
         self.cherry_icon = (QPixmap("src/images/icons/links/cherry_icon_dark.png"), QPixmap("src/images/icons/links/cherry_icon_light.png"))
+        
         
 
         

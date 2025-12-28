@@ -39,12 +39,12 @@ class SaveManager:
         
         while layout.count():
             item = layout.takeAt(0)
-            widget = item.widget()
+            widget = item.widget() # type: ignore
             if widget is not None:
                 widget.setParent(None)
                 widget.deleteLater()
-            elif item.layout() is not None:
-                self.clear_layout(item.layout())
+            elif item.layout() is not None: # type: ignore
+                self.clear_layout(item.layout()) # type: ignore
 
 
     
@@ -688,6 +688,37 @@ class SaveManager:
 
         self.create_chart(tool_data[1], 1570)
 
+    def return_bosses(self):
+        boss_data = self.DM.bosses_df()
+        boss_count = boss_data[0]
+
+        self.boss_text = QLabel(f"Bosses ({boss_count})", self.app.main_widget)
+        self.boss_text.setProperty("class", "header2")
+        self.boss_text.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        self.boss_text.setFont(self.app.font)
+
+        self.boss_image = QLabel("", self.app.main_widget)
+        self.boss_image.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        self.boss_image.setPixmap(self.IM.heart_icon[self.app.mode].scaled(90, 98, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation))
+
+        h_layout = QHBoxLayout()
+        h_layout.setSpacing(0)  
+        h_layout.setAlignment(Qt.AlignmentFlag.AlignHCenter) 
+
+        h_layout.addWidget(self.boss_image)  
+        h_layout.addWidget(self.boss_text) 
+
+        self.data_layout.addLayout(h_layout)
+
+        self.boss_info = QLabel(f"Powerful foes scattered throughout Pharloom. Not all bosses need to be defeated for 100%.", self.app.main_widget)
+        self.boss_info.setProperty("class", "header2")
+        self.boss_info.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        self.boss_info.setFont(self.app.font)
+
+        self.data_layout.addWidget(self.boss_info, alignment=Qt.AlignmentFlag.AlignHCenter)
+
+        self.create_chart(boss_data[1], 1510)
+
 
 
     def create_chart(self, dataframe, fixed_height=33): # 33
@@ -754,7 +785,7 @@ class SaveManager:
         table.setItemDelegate(NoHoverDelegate(table))
         table.setAlternatingRowColors(True)
         table.setProperty("class", "Data_Chart")
-        table.horizontalHeader().setFont(self.app.font_bold)
+        table.horizontalHeader().setFont(self.app.font_bold) # type: ignore
         table.setFont(self.app.font_bold)
    
         
@@ -762,8 +793,8 @@ class SaveManager:
         table.setModel(model)
         
         table.setMouseTracking(True)
-
-        table.verticalHeader().setVisible(False)
+ 
+        table.verticalHeader().setVisible(False) # type: ignore
         table.setShowGrid(False)
         
 
@@ -776,11 +807,11 @@ class SaveManager:
         table.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         
         table.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
-        table.horizontalHeader().setSectionResizeMode(table.horizontalHeader().ResizeMode.Fixed)
+        table.horizontalHeader().setSectionResizeMode(table.horizontalHeader().ResizeMode.Fixed) # type: ignore
 
         # Set fixed width and height
         for col in range(model.columnCount()):
-            table.horizontalHeader().resizeSection(col, 200)
+            table.horizontalHeader().resizeSection(col, 200) # type: ignore
         
         total_width = 200 * model.columnCount()
         table.setMinimumWidth(total_width + 10)
@@ -800,7 +831,7 @@ class SaveManager:
             if index.column() == df.columns.get_loc("Location"):
                 url = df.iloc[index.row(), index.column()]
                 if url != "N/A":
-                    QDesktopServices.openUrl(QUrl(url))
+                    QDesktopServices.openUrl(QUrl(str(f"https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds={url}")))
 
         def on_enter(index):
             if index.column() == df.columns.get_loc("Location"):
@@ -814,7 +845,7 @@ class SaveManager:
 
         table.entered.connect(on_enter)
 
-        table.leaveEvent = on_leave
+        table.leaveEvent = on_leave # type: ignore
 
         table.clicked.connect(handle_click)
         

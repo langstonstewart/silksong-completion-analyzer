@@ -26,7 +26,7 @@ class Dataframe_Manager:
         data_list = {"Scenes": ["Memory_Silk_Heart_BellBeast", "Memory_Silk_Heart_WardBoss", "Memory_Silk_Heart_LaceTower"],
                      "Acts": [1, 2, 2],
                      "Prerequisites": ["None", "None", "None"],
-                     "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477881", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479082", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479089"]}
+                     "Locations": ['477881', '479082', '479089']}
 
         sh_id = "glow_rim_Remasker"
 
@@ -65,8 +65,7 @@ class Dataframe_Manager:
                      "Acts": [1, 1, 2, 2, 2, 2, 2, 2],
                      "Prerequisites": ["None", "None", "None", "Cling Grip", 
                                        "None", "None", "None", "Faydown Cloak"],
-                     "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477838", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477894", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477937", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478541",
-                                   "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478711", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479250", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479157", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479139"]
+                     "Locations":['477838', '477894', '477937', '478541', '478711', '479250', '479157', '479139']
                      }
         
         return self.search_flags(cm_data_list, "Craftmetal")
@@ -93,10 +92,10 @@ class Dataframe_Manager:
                         "Prerequisites": ["None", "None", "Drifter's Cloak", "None", "Cling Grip", "Needolin", "None", "None", "None", "Clawline",
                                           "Clawline", "Key of Apostate", " Faydown Cloak", " Faydown Cloak", "None", "Faydown Cloak", "None", "None", "None", "Silk Soar"],
 
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477840", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478091", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477975", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478177", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477901", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478233", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478800", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478615", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478671", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478849", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478841", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479001", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479038", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479151", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478879", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478498", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479194", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479447", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479449", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479460"]}
+                        "Locations": ['477840', '478091', '477975', '478177', '477901', 
+                                      '478233', '478800', '478615', '478671', '478849', 
+                                      '478841', '479001', '479038', '479151', '478879', 
+                                      '478498', '479194', '479447', '479449', '479460']}
 
         return self.search_flags(ms_data_list, "Mask Shard")
     
@@ -124,9 +123,10 @@ class Dataframe_Manager:
                                           "None", "None", "Save Sherma", "None", "Clawline",
                                           "Faydown Cloak", "Faydown Cloak", "Faydown Cloak"],
 
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478080", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477926", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478263", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478475", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478230", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478347", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478820", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478618", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478704", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478586", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478931", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479317", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479180", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478825", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478909", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479117", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478527", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479249"]}
+                        "Locations": ['478080', '477926', '478263', '478475', '478230', 
+                                      '478347', '478820', '478618', '478704', '478586', 
+                                      '478931', '479317', '479180', '478825', '478909', 
+                                      '479117', '478527', '479249']}
 
 
         return self.search_flags(sf_data_list, "Spool Fragment")
@@ -139,8 +139,7 @@ class Dataframe_Manager:
                         "ID": ["None", "None", "None", "None"],
                         "Acts": [1, 2, 2, 2],
                         "Prerequisites": ["None", "None", "Faydown Cloak", "Clawline"],
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477919", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478348", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478533", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478728"]}
+                        "Locations": ['477919', '478348', '478533', '478728']}
 
 
         return self.search_flags(ck_data_list, "Crafting Kit Upgrade")
@@ -152,8 +151,7 @@ class Dataframe_Manager:
                         "ID": ["None", "None", "None", "None"],
                         "Acts": [1, 1, 1, 2],
                         "Prerequisites": ["None", "None", "None", "None"],
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477950", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478252", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479167", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479436"]}
+                        "Locations": ['477950', '478252', '479167', '479436']}
 
 
         return self.search_flags(tp_data_list, "Tool Pouch Upgrade")
@@ -170,8 +168,7 @@ class Dataframe_Manager:
 
                         "Prerequisites": ["None", "None", "None", "None"],
                         
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478210", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478668", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479233", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479582"]}
+                        "Locations": ['478210', '478668', '479233', '479582']}
 
 
         return self.search_flags(nu_data_list, "Nail Upgrade")
@@ -184,8 +181,7 @@ class Dataframe_Manager:
                                   "Sharpdart", "Rune Rage", "Pale Nails"],
                         "Acts": [1, 1, 1, 2, 2, 3],
                         "Prerequisites": ["None", "None", "None", "None", "Clawline", "Silk Soar"],
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477871", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478061", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478371", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479079", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479025", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479606"]}
+                        "Locations": ['477871', '478061', '478371', '479079', '479025', '479606']}
 
 
         return self.search_tool_flags(ss_data_list, "Silk Skills")
@@ -210,9 +206,9 @@ class Dataframe_Manager:
                                          "Cling Grip", "Clawline", "None", "None", "None",
                                          "Bind Eva"],
 
-                       "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477915", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477971", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478189", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478199", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478510",
-                                     "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478714", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479103", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479288", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479265", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479386",
-                                     "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479654"]}
+                       "Locations": ['477915', '477971', '478189', '478199', '478510', 
+                                     '478714', '479103', '479288', '479265', '479386', 
+                                     '479654']}
         
         return self.search_flags(a_data_list, "Ability")
     
@@ -225,8 +221,7 @@ class Dataframe_Manager:
                                  "Architect Crest", "Witch Crest", "Shaman Crest"],
                        "Acts": [1, 1, 1, 1, 2, 2, 3],
                        "Prerequisites": ["None", "Drifter's Cloak", "None", "Simple Key", "Architect's Key", "Clawline", "Silk Soar"],
-                       "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478020", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478156", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478240", 
-                                     "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478745", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478815", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479384"]}
+                       "Locations": ['000000', '478020', '478156', '478240', '478745', '478815', '479384']}
         
         return self.search_crest_flags(c_data_list, "Crest")
     
@@ -239,8 +234,7 @@ class Dataframe_Manager:
                         "ID": ["None", "None", "None", "Collectable Item Pickup"],
                         "Acts": [1, 1, 2, 2],
                         "Prerequisites": ["None", "Cling Grip", "None", "Clawline"],
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477839", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478280", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478880", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479215"]}
+                        "Locations": ['477839', '478280', '478880', '479215']}
 
         return self.search_flags(sk_data_list, "Simple Key")
     
@@ -251,8 +245,7 @@ class Dataframe_Manager:
                                    "Psalm Cylinder Grindle", "Psalm Cylinder Ward", "Psalm Cylinder Hang"],
                         "Acts": [2, 2, 2, 2, 2, 2],
                         "Prerequisites": ["None", "Cling Grip", "Drifter's Cloak", "Faydown Cloak", "None", "None"],
-                        "Locations": ["https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479717", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478650", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478774", 
-                                      "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478530", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478929", "https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478908"]}
+                        "Locations": ['479717', '478650', '478774', '478530', '478929', '478908']}
         
         return self.search_relic_flags(pc_data_list, "Psalm Cylinder")
     
@@ -280,10 +273,10 @@ class Dataframe_Manager:
                                           'None', 'None', 'None', 'Clawline', 'None', 
                                           'None', 'None', 'Faydown Cloak', 'None', 'Silk Soar'], 
 
-                        'Locations': ['https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478222', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478246', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478493', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478836', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477953', 
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478017', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478035', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478039', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478204', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478502', 
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479017', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478787', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478851', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479204', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478571', 
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478372', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478676', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479110', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479196', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478212']}
+                        'Locations': ['478222', '478246', '478493', '478836', '477953', 
+                                      '478017', '478035', '478039', '478204', '478502', 
+                                      '479017', '478787', '478851', '479204', '478571', 
+                                      '478372', '478676', '479110', '479196', '478212']}
         
         return self.search_flags(ml_data_list, "Memory Locket")
     
@@ -310,7 +303,6 @@ class Dataframe_Manager:
                                         "Lost Flea 16", "Lost Flea 17", "Lost Flea 18", "Lost Flea 19", "Lost Flea 20",
                                         "Lost Flea 21", "Lost Flea 22",  "Lost Flea 23 (Kratt)", "Lost Flea 24", "Lost Flea 25", "Lost Flea 26",
                                         "Lost Flea 27", "Lost Flea 28", "Lost Flea 29 (Giant Flea)", "Lost Flea 30 (Vog)"],
-
                             
                           "Acts": [1, 1, 1, 1, 1,
                                    1, 1, 1, 1, 1,
@@ -326,12 +318,12 @@ class Dataframe_Manager:
                                             "Cling Grip", "Cling Grip", "None", "Clawline", "None", "Clawline",
                                             "None", "Faydown Cloak", "None", "None"],
 
-                          "Locations": ['https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477890', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477907', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477916', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477940', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477999', 
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478145', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478287', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478176', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478219', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478385', 
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478360', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478378', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478193', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478450', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478393', 
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478443', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478437', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478419', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478408', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478398',
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478386', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478380', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478271', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478404', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478416', 
-                                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478402', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478420', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478392', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478413', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479138']}
+                          "Locations": ['477890', '477907', '477916', '477940', '477999', 
+                                        '478145', '478287', '478176', '478219', '478385', 
+                                        '478360', '478378', '478193', '478450', '478393', 
+                                        '478443', '478437', '478419', '478408', '478398', 
+                                        '478386', '478380', '478271', '478404', '478416', 
+                                        '478402', '478420', '478392', '478413', '479138']}
         
         return self.search_flags(flea_data_list, "Flea")
     
@@ -377,21 +369,92 @@ class Dataframe_Manager:
                           'None', 'None', 'None', 'None', 'Save All Fleas', 
                           'None'], 
                           
-        'Locations': ['https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477848', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477851', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478255', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477899', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477935', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478058', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478158', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479081', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477841', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477918', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478025', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478341', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478365', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478964', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479070', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477986', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478216', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478577', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478294', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478496', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478525', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477947', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478607', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=477917', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478604', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478345', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479201', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479309', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479182', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478878', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478947', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479230', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478848', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479156', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478903', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478937', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479133', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479254', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479240', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479242', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478727', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479224', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479497', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479248', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478881', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478725', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478726', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=478691', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479121', 'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479439', 
-                      'https://mapgenie.io/hollow-knight-silksong/maps/pharloom?locationIds=479466']}
+        'Locations': ['477848', '477851', '478255', '477899', '477935', 
+                      '478058', '478158', '479081', '477841', '477918', 
+                      '478025', '478341', '478365', '478964', '479070', 
+                      '477986', '478216', '478577', '478294', '478496', 
+                      '478525', '477947', '478607', '477917', '478604', 
+                      '478345', '479201', '479309', '479182', '478878', 
+                      '478947', '479230', '478848', '479156', '478903', 
+                      '478937', '479133', '479254', '479240', '479242', 
+                      '478727', '479224', '479497', '479248', '478881', 
+                      '478725', '478726', '478691', '479121', '479439', 
+                      '479466']}
 
        
         
         return self.search_tool_flags(tools_data_list, "Tool")
+    
+    def bosses_df(self):
+
+        bosses_data_list = {"Scenes": ['defeatedMossMother', 'defeatedBellBeast', 'defeatedLace1', 'defeatedSongGolem', 'defeatedBoneFlyerGiant', 
+                                       'defeatedSplinterQueen', 'skullKingDefeated', 'skullKingKilled', 'defeatedVampireGnatBoss', 'Roof Crab', 
+                                       'visitedBellhartSaved', 'Moss Mother', 'defeatedBoneFlyerGiantGolemScene', 'defeatedCoralDrillers', 'defeatedLastJudge', 
+                                       'defeatedPhantom', 'defeatedCogworkDancers', 'defeatedTrobbio', 'Garmond_Zaza', 'Dock Guard Thrower', 
+                                       'wardBossDefeated', 'defeatedRoachkeeperChef', 'defeatedWispPyreEffigy', 'DefeatedSwampShaman', 'defeatedZapCoreEnemy', 
+                                       'defeatedCoralDrillerSolo', 'defeatedFirstWeaver', 'defeatedBroodMother', 'defeatedSongChevalierBoss', 'Shakra', 
+                                       'defeatedLaceTower', 'Silk Boss', 'Giant Centipede', 'Moss Mother', 'garmondBlackThreadDefeated', 
+                                       'Crawfather', 'BlueScientistDead', 'Coral Warrior Grey', 'defeatedWhiteCloverstag', 'defeatedCloverDancers', 
+                                       'defeatedAntTrapper', 'defeatedTormentedTrobbio', 'PinstressPeakBattleAccepted', 'defeatedSeth', 'defeatedFlowerQueen', 
+                                       'defeatedAntQueen', 'defeatedCoralKing', 'Lost Lace', 'Abyss Mass']
+,
+                            "SceneType": ['Generic', 'Generic', 'Generic', 'Generic', 'Generic', 
+                                          'Generic', 'Generic', 'Generic', 'Generic', 'Journal', 
+                                          'Generic', 'Journal', 'Generic', 'Generic', 'Generic', 
+                                          'Generic', 'Generic', 'Generic', 'Journal', 'Journal', 
+                                          'Generic', 'Generic', 'Generic', 'Generic', 'Generic', 
+                                          'Generic', 'Generic', 'Generic', 'Generic', 'Journal', 
+                                          'Generic', 'Journal', 'Journal', 'Journal', 'Generic', 
+                                          'Journal', 'Generic', 'Journal', 'Generic', 'Generic', 
+                                          'Generic', 'Generic', 'Generic', 'Generic', 'Generic', 
+                                          'Generic', 'Generic', 'Journal', 'Journal'],
+
+                            "Names": ['Moss Mother (1/3)', 'Bell Beast', 'Lace (1/2)', 'Fourth Chorus', 'Savage Beastfly (1/2)', 
+                                      'Sister Splinter', 'Skull Tyrant (1/2)', 'Skull Tyrant (2/2)', 'Moorwing', 'Craggler', 
+                                      'Widow', 'Moss Mother (2/3)', 'Savage Beastfly (2/2)', 'Great Conchflies', 'Last Judge', 
+                                      'Phantom', 'Cogwork Dancers', 'Trobbio', 'Garmond and Zaza', 'Signis and Gron', 
+                                      'The Unravelled', 'Disgraced Chef Lugoli', 'Father Of The Flame', 'Groal the Great', 'Voltvyrm', 
+                                      'Raging Conchfly', 'First Sinner', 'Broodmother', 'Second Sentinel', 'Shakra', 
+                                      'Lace (2/2)', 'Grand Mother Silk', 'Bell Eater', 'Moss Mother (3/3)', 'Lost Garmond', 
+                                      'Crawfather', 'Plasmified Zango', 'Watcher At the Edge', 'Palestag', 'Clover Dancers', 
+                                      'Gurr The Outcast', 'Tormented Trobbio', 'Pinstress', 'Shrine Guardian Seth', 'Nyleth', 
+                                      'Skarrsinger Karmelita', 'Crust King Khann', 'Lost Lace', 'Summoned Saviour'],
+
+                            "Acts": ['1', '1', '1', '1', '1', 
+                                     '1', '1', '2', '1', '2', 
+                                     '1', '1', '2', '1', '1', 
+                                     '1', '2', '2', '2', '2', 
+                                     '2', '2', '2', '2', '3', 
+                                     '2', '2', '2', '2', '2', 
+                                     '2', '2', '3', '3', '3', 
+                                     '3', '3', '3', '3', '3', 
+                                     '3', '3', '3', '3', '3', 
+                                     '3', '3', '3', '3'],
+
+                            "Prerequisites": ['N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 
+                                              'N/A', 'N/A', 'N/A', 'N/A'],
+
+                            "Locations": ['476904', '477879', '476915', '477978', '478844', 
+                                          '478137', '478136', '479655', '478453', '478088', 
+                                          '478138', '478440', '478019', '478506', '478545', 
+                                          '478370', '478606', '478690', '479361', '478831', 
+                                          '480354', '478992', '479155', '478861', '479223', 
+                                          '479227', '479023', '479255', '479253', '479822', 
+                                          '479088', '479099', '479264', '481810', '479452', 
+                                          '479578', '479273', '480326', '479408', '479427', 
+                                          '479467', '479377', '479464', '479401', '479404', 
+                                          '479198', '479392', '479471', '479740']}
+        
+        return self.search_flags(bosses_data_list, "Boss")
+
 
     def search_flags(self, data_list: dict[str, Any], name):
 
@@ -402,8 +465,6 @@ class Dataframe_Manager:
         dataframe["Prerequisites"].extend(data_list['Prerequisites'])
 
         dataframe["Location"].extend(data_list['Locations'])
-
-      
 
         for i in range(len(data_list["Scenes"])):  # check if flag exists
             flag_found = False
@@ -429,8 +490,8 @@ class Dataframe_Manager:
                         
                         dataframe["Collected"].append(self.symbol_collected)
                     else:
-                        
                         dataframe["Collected"].append(self.symbol_missing)
+
                 elif data_list["SceneType"][i] == "Quest":
                     for quest in self.save_data['playerData']['QuestCompletionData']['savedData']:
                         if quest['Name'] == data_list["Scenes"][i]:
@@ -439,6 +500,14 @@ class Dataframe_Manager:
                                 dataframe["Collected"].append(self.symbol_collected)
                                 flag_found = True
                                 break
+
+                elif data_list["SceneType"][i] == "Journal":
+                    for entry in self.save_data['playerData']['EnemyJournalKillData']['list']:
+                        if entry['Name'] == data_list["Scenes"][i]:
+                            dataframe["Collected"].append(self.symbol_collected)
+                            flag_found = True
+                            break
+                        
                     if not flag_found:
                             dataframe["Collected"].append(self.symbol_missing)
                                 
